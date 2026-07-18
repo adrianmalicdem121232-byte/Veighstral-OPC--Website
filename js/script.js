@@ -177,3 +177,25 @@ document.addEventListener("click", function (e) {
     }
 
 });
+/*=========================
+MOBILE MENU
+=========================*/
+
+const menuBtn = document.querySelector(".menu-toggle");
+const navMenu = document.querySelector("nav");
+
+menuBtn.addEventListener("click",()=>{
+
+    navMenu.classList.toggle("active");
+
+});
+
+document.querySelectorAll("nav a").forEach(link=>{
+
+link.addEventListener("click",()=>{
+
+navMenu.classList.remove("active");
+
+});
+
+});
